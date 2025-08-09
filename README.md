@@ -238,11 +238,6 @@ This project is for educational purposes. Please respect the dataset license and
 - Open source community for excellent libraries
 - Educational institution for project guidance
 
-### 📞 Contact
-- **Email**: [your.email@example.com]
-- **LinkedIn**: [Your LinkedIn Profile]
-- **GitHub**: [Your GitHub Repository]
-
 ---
 
 **Note**: This project demonstrates practical application of data science techniques in educational technology. Results may vary based on dataset characteristics and parameter settings.
