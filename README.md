@@ -44,7 +44,7 @@ capstone-project/
 
 ### 🚀 Quick Start
 
-#### 1. Persiapan Lingkungan
+#### 1. Persiapan Environment
 ```bash
 # Install paket yang dibutuhkan (di Google Colab)
 !pip install -r requirements.txt
