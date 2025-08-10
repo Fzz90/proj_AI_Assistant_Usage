@@ -1,18 +1,18 @@
-# 🎓 Proyek Capstone: Penggunaan AI Assistant dalam Kehidupan Mahasiswa
-## Analisis Klasifikasi Data dan Summarization
+# 🎓 Capstone Project: Penggunaan AI Assistant dalam Kehidupan Mahasiswa
+## Data Classification and Summarization Analysis
 
-### 📋 Ringkasan
-Proyek capstone ini menganalisis pola penggunaan AI assistant di kalangan mahasiswa menggunakan teknik machine learning canggih untuk klasifikasi dan text summarization. Proyek ini menggabungkan algoritma ML tradisional dengan model AI modern (IBM Granite) untuk memberikan wawasan komprehensif tentang bagaimana mahasiswa berinteraksi dengan tools AI dalam perjalanan akademik mereka.
+### 📋 Overview
+Proyek ini menganalisis pola penggunaan AI assistant di kalangan mahasiswa menggunakan teknik machine learning canggih untuk klasifikasi dan text summarization. Proyek ini menggabungkan algoritma ML tradisional dengan model AI modern (IBM Granite) untuk memberikan wawasan komprehensif tentang bagaimana mahasiswa berinteraksi dengan tools AI dalam perjalanan akademik.
 
 ### 🎯 Tujuan
 - **Klasifikasi**: Mengkategorikan pola penggunaan AI assistant secara otomatis (Akademik, Personal, Kreatif)
 - **Summarization**: Menghasilkan ringkasan singkat dari feedback mahasiswa menggunakan IBM Granite
-- **Analisis**: Mengidentifikasi faktor-faktor kunci yang mempengaruhi adopsi dan penggunaan AI dalam pendidikan
-- **Wawasan**: Memberikan rekomendasi yang dapat ditindaklanjuti untuk institusi pendidikan dan developer AI
+- **Analisis**: Mengidentifikasi faktor-faktor penting yang mempengaruhi adopsi dan penggunaan AI dalam pendidikan
+- **Insight**: Memberikan rekomendasi yang dapat ditindaklanjuti untuk institusi pendidikan dan developer AI
 
 ### 📊 Dataset
-- **Sumber**: Kaggle - AI Assistant Usage in Student Life (Synthetic)
-- **Ukuran**: Variabel (tergantung dataset yang dipilih)
+- **Sumber**: Kaggle - AI Assistant Usage in Student Life (Synthetic) (https://www.kaggle.com/datasets/ayeshasal89/ai-assistant-usage-in-student-life-synthetic)
+- **Size**: Variabel (tergantung dataset yang dipilih)
 - **Fitur**: Campuran (kategorikal, numerik, teks)
 - **Target**: Kategori/pola penggunaan
 
@@ -26,7 +26,7 @@ Proyek capstone ini menganalisis pola penggunaan AI assistant di kalangan mahasi
 
 ### 📁 Struktur Proyek
 ```
-capstone-project/
+proj_AI_Assistant_Usage/
 ├── notebooks/
 │   ├── 01_data_exploration.ipynb          # Eksplorasi dan analisis data
 │   ├── 02_data_preprocessing.ipynb        # Pembersihan dan persiapan data
@@ -42,7 +42,7 @@ capstone-project/
     └── presentation_structure.md         # Outline presentasi
 ```
 
-### 🚀 Memulai
+### 🚀 Quick Start
 
 #### 1. Setup Environment
 ```bash
@@ -94,10 +94,10 @@ Jalankan notebook dalam urutan berikut:
 - Visualisasi feature importance
 - Plot eksplorasi data
 
-### 💡 Wawasan & Temuan
+### 💡 Insights & Findings
 
 #### Pola Penggunaan Mahasiswa Utama
-Analisis kami mengungkapkan beberapa wawasan kritis tentang penggunaan AI assistant di kalangan mahasiswa:
+Analisis mengungkapkan beberapa wawasan penting tentang penggunaan AI assistant di kalangan mahasiswa:
 
 **1. Distribusi Penggunaan Akademik vs Personal**
 - **70% Akademik**: Bantuan PR, dukungan riset, penjelasan konsep
@@ -129,7 +129,7 @@ Model machine learning mengidentifikasi prediktor kunci pola penggunaan AI:
 4. **Tingkat Kenyamanan Teknologi** (importance: 0.14) - Pengalaman teknologi sebelumnya
 5. **Penggunaan Teman Sebaya** (importance: 0.12) - Pengaruh sosial pada adopsi
 
-#### Wawasan Analisis Teks
+#### Text Analysis Insights
 Melalui analisis summarization dari feedback mahasiswa, kami menemukan:
 
 **Tema Positif (65% dari feedback):**
@@ -148,7 +148,7 @@ Melalui analisis summarization dari feedback mahasiswa, kami menemukan:
 - "Berguna tapi perlu supervisi manusia"
 - "Titik awal yang baik tapi memerlukan verifikasi"
 
-#### Wawasan Perilaku
+#### Behavioral Insights
 **Korelasi Gaya Belajar:**
 - **Visual Learners**: Lebih suka AI untuk penjelasan diagram dan ringkasan visual
 - **Auditory Learners**: Menggunakan fitur text-to-speech untuk review konten
@@ -172,13 +172,13 @@ Melalui analisis summarization dari feedback mahasiswa, kami menemukan:
 3. **Progress Tracking**: Minat pada learning analytics dan metrik peningkatan
 4. **Aksesibilitas**: Kebutuhan untuk interface multibahasa dan ramah disabilitas
 
-### 🤖 Penjelasan Dukungan AI
+### 🤖 AI Support Explanation
 
 #### Peran AI dalam Proyek Ini
 Proyek capstone ini memanfaatkan berbagai teknologi AI untuk menciptakan framework analisis komprehensif. Berikut cara AI mendukung berbagai aspek penelitian:
 
 #### 1. IBM Granite untuk Text Summarization
-**Fungsinya:** IBM Granite 3.0-8b-instruct adalah large language model yang dirancang khusus untuk tugas instruction-following, termasuk text summarization.
+**Fungsinya:** IBM Granite 3.2-8b-instruct adalah large language model yang dirancang khusus untuk tugas instruction-following, termasuk text summarization.
 
 **Cara integrasinya:**
 ```python
@@ -192,7 +192,7 @@ def summarize_text(text, max_tokens=100):
     prompt = f"Ringkas feedback mahasiswa berikut tentang penggunaan AI: {text}"
     
     output = replicate.run(
-        "ibm-granite/granite-3.0-8b-instruct",
+        "ibm-granite/granite-3.2-8b-instruct",
         input={
             "prompt": prompt,
             "max_tokens": max_tokens,
@@ -210,7 +210,7 @@ def summarize_text(text, max_tokens=100):
 - **Kecepatan**: Memproses setiap sampel teks dalam 2-3 detik
 
 #### 2. Model Machine Learning untuk Pengenalan Pola
-**Algoritma ML tradisional** (Random Forest, SVM, Gradient Boosting) bekerja bersama AI untuk:
+**Algoritma ML tradisional** (Random Forest, SVM, Gradient Boosting, Logistic Regression) bekerja bersama AI untuk:
 
 **Tugas Klasifikasi:**
 - Mengkategorikan pola penggunaan secara otomatis (Akademik/Personal/Kreatif)
@@ -239,7 +239,7 @@ def create_ai_features(df):
 - Analisis sentiment feedback
 - Scoring keterbacaan ringkasan yang dihasilkan AI
 
-**Metrik Kualitas:**
+**Quality Metrics:**
 ```python
 import textstat
 
@@ -256,8 +256,8 @@ def evaluate_summary_quality(original_text, summary):
     return metrics
 ```
 
-#### 4. Visualisasi Data Cerdas
-**Plotly dengan wawasan yang ditingkatkan AI:**
+#### 4. Intelligent Data Visualization
+**Plotly with AI-enhanced insights:**
 
 **Generasi Chart Otomatis:**
 - AI mengidentifikasi pola paling signifikan untuk visualisasi
@@ -283,7 +283,7 @@ def create_intelligent_dashboard(df, ai_insights):
     return fig
 ```
 
-#### 5. Predictive Analytics dan Rekomendasi
+#### 5. Predictive Analytics and Recommendations
 **Sistem rekomendasi berbasis AI:**
 
 **Panduan Mahasiswa:**
@@ -322,7 +322,7 @@ def generate_institutional_recommendations(usage_data, performance_data):
     return recommendations
 ```
 
-#### 6. Quality Assurance dan Validasi
+#### 6. Quality Assurance and Validation
 **Proses validasi yang dibantu AI:**
 
 **Pemeriksaan Kualitas Data:**
@@ -357,7 +357,7 @@ def ai_assisted_model_validation(models, test_data):
     return results
 ```
 
-#### Etika AI dan Keterbatasan
+#### Etika AI dan Keterbatasannya
 
 **Langkah-langkah Transparansi:**
 - Semua konten yang dihasilkan AI diberi label yang jelas
@@ -421,7 +421,7 @@ summarization_params = {
 - Analisis feature importance
 - Tools interpretabilitas model
 
-#### 3. Summarization Terdepan
+#### 3. State-of-the-Art Summarization
 - Integrasi IBM Granite via Replicate API
 - Kemampuan batch processing
 - Metrik kualitas (compression ratio, readability)
@@ -470,7 +470,7 @@ summarization_params = {
 # Test koneksi Replicate
 def test_api_connection():
     try:
-        output = replicate.run("ibm-granite/granite-3.0-8b-instruct", 
+        output = replicate.run("ibm-granite/granite-3.2-8b-instruct", 
                               input={"prompt": "Hello", "max_tokens": 10})
         print("✅ API berhasil terhubung")
         return True
@@ -496,12 +496,12 @@ param_grid_fast = {
 }
 ```
 
-### 📚 Sumber Daya Tambahan
+### 📚 Sumber Tambahan
 
 #### Materi Pembelajaran
 - [Panduan Pengguna Scikit-learn](https://scikit-learn.org/stable/user_guide.html)
 - [Dokumentasi Plotly Python](https://plotly.com/python/)
-- [Detail Model IBM Granite](https://replicate.com/ibm-granite/granite-3.0-8b-instruct)
+- [Detail Model IBM Granite](https://replicate.com/ibm-granite/granite-3.2-8b-instruct)
 - [NLTK Book](https://www.nltk.org/book/)
 
 #### Proyek Terkait
@@ -511,7 +511,7 @@ param_grid_fast = {
 - Sistem Analisis Konten Otomatis
 
 ### 🤝 Kontribusi
-Ini adalah proyek capstone, tetapi saran dan perbaikan selalu diterima:
+Ini adalah proyek capstone untuk Hacktiv8, saran dan perbaikan selalu terbuka🙏:
 1. Fork repository
 2. Buat feature branch Anda
 3. Commit perubahan Anda
@@ -528,9 +528,8 @@ Proyek ini untuk tujuan pendidikan. Harap hormati lisensi dataset dan terms of s
 - Institusi pendidikan untuk bimbingan proyek
 
 ### 📞 Kontak
-- **Email**: [email.anda@example.com]
-- **LinkedIn**: [Profil LinkedIn Anda]
-- **GitHub**: [Repository GitHub Anda]
+- **Email**: faizsyihab77@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/faizsyihab/
 
 ---
 
@@ -543,5 +542,3 @@ Proyek ini untuk tujuan pendidikan. Harap hormati lisensi dataset dan terms of s
 - **Visualisasi**: 20+ chart interaktif
 - **Waktu Pemrosesan**: ~45-60 menit total
 - **Dokumentasi**: Komprehensif dengan contoh
-
-🎯 **Siap untuk mengeksplorasi pola penggunaan AI assistant? Mulai dengan notebook 01 dan ikuti perjalanannya!**
