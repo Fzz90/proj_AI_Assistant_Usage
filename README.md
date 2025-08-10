@@ -26,7 +26,7 @@ Proyek capstone ini menganalisis pola penggunaan AI assistant di kalangan mahasi
 
 ### 📁 Struktur Proyek
 ```
-capstone-project/
+proj_AI_Assistant_Usage/
 ├── notebooks/
 │   ├── 01_data_exploration.ipynb          # Eksplorasi dan analisis data
 │   ├── 02_data_preprocessing.ipynb        # Pembersihan dan persiapan data
