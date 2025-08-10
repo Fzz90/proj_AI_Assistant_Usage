@@ -11,7 +11,7 @@ Proyek capstone ini menganalisis pola penggunaan AI assistant di kalangan mahasi
 - **Wawasan**: Memberikan rekomendasi yang dapat ditindaklanjuti untuk institusi pendidikan dan pengembang AI
 
 ### 📊 Dataset
-- **Sumber**: Kaggle - AI Assistant Usage in Student Life (Synthetic)  
+- **Sumber**: Kaggle - AI Assistant Usage in Student Life (https://www.kaggle.com/datasets/ayeshasal89/ai-assistant-usage-in-student-life-synthetic)  
 - **Ukuran**: Variabel (tergantung dataset yang dipilih)  
 - **Fitur**: Campuran (kategorikal, numerik, teks)  
 - **Target**: Kategori/pola penggunaan
