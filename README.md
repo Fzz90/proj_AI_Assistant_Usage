@@ -1,5 +1,5 @@
 # 🎓 Capstone Project: Penggunaan AI Assistant dalam Kehidupan Mahasiswa
-## Data Classification and Summarization Analysis 
+## Analisis Klasifikasi Data dan Ringkasan Teks
 
 ### 📋 Gambaran Umum
 Proyek capstone ini menganalisis pola penggunaan AI assistant di kalangan mahasiswa menggunakan teknik machine learning lanjutan untuk klasifikasi dan summarization. Proyek ini menggabungkan algoritma ML tradisional dengan model AI modern (IBM Granite) untuk memberikan wawasan menyeluruh tentang bagaimana mahasiswa berinteraksi dengan alat AI dalam perjalanan akademis mereka.
@@ -11,7 +11,7 @@ Proyek capstone ini menganalisis pola penggunaan AI assistant di kalangan mahasi
 - **Wawasan**: Memberikan rekomendasi yang dapat ditindaklanjuti untuk institusi pendidikan dan pengembang AI
 
 ### 📊 Dataset
-- **Sumber**: Kaggle - AI Assistant Usage in Student Life (https://www.kaggle.com/datasets/ayeshasal89/ai-assistant-usage-in-student-life-synthetic)  
+- **Sumber**: Kaggle - AI Assistant Usage in Student Life (Synthetic)  
 - **Ukuran**: Variabel (tergantung dataset yang dipilih)  
 - **Fitur**: Campuran (kategorikal, numerik, teks)  
 - **Target**: Kategori/pola penggunaan
@@ -26,7 +26,7 @@ Proyek capstone ini menganalisis pola penggunaan AI assistant di kalangan mahasi
 
 ### 📁 Struktur Proyek
 ```
-proj_AI_Assistant_Usage/
+capstone-project/
 ├── notebooks/
 │   ├── 01_data_exploration.ipynb          # Eksplorasi dan analisis data
 │   ├── 02_data_preprocessing.ipynb        # Pembersihan dan persiapan data
@@ -44,7 +44,7 @@ proj_AI_Assistant_Usage/
 
 ### 🚀 Quick Start
 
-#### 1. Persiapan Environment
+#### 1. Persiapan Lingkungan
 ```bash
 # Install paket yang dibutuhkan (di Google Colab)
 !pip install -r requirements.txt
@@ -132,7 +132,7 @@ summarization_params = {
 - Analisis feature importance  
 - Alat interpretabilitas model
 
-#### 3. Summarization Quality
+#### 3. Summarization Mutakhir
 - Integrasi IBM Granite via Replicate API  
 - Kapabilitas batch processing  
 - Metrik kualitas (rasio kompresi, readability)  
@@ -222,7 +222,7 @@ param_grid_fast = {
 - Automated Content Analysis Systems
 
 ### 🤝 Kontribusi
-Ini adalah contoh proyek capstone untuk Hacktiv8, namun saran dan perbaikan sangat diapresiasi🙏:
+Ini adalah proyek capstone, namun saran dan perbaikan sangat disambut:
 1. Fork repository  
 2. Buat feature branch Anda  
 3. Commit perubahan Anda  
@@ -253,3 +253,5 @@ Proyek ini untuk tujuan edukasi. Mohon hargai lisensi dataset dan ketentuan laya
 - **Visualisasi**: 20+ chart interaktif  
 - **Waktu Pemrosesan**: ~45–60 menit total  
 - **Dokumentasi**: Komprehensif dengan contoh
+
+🎯 **Siap menjelajahi pola penggunaan AI assistant? Mulai dari notebook 01 dan ikuti perjalanannya!**
