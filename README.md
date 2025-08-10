@@ -1,7 +1,7 @@
 # 🎓 Proyek Capstone: Penggunaan AI Assistant dalam Kehidupan Mahasiswa
-## Analisis Klasifikasi Data dan Ringkasan Teks
+## Data Classification and Summarization Analysis
 
-### 📋 Ringkasan
+### 📋 Overview
 Proyek capstone ini menganalisis pola penggunaan AI assistant di kalangan mahasiswa dengan menggunakan teknik machine learning tingkat lanjut untuk klasifikasi dan peringkasan teks. Proyek ini menggabungkan algoritma ML tradisional dengan model AI modern (IBM Granite) untuk memberikan wawasan komprehensif tentang bagaimana mahasiswa berinteraksi dengan alat AI selama perjalanan akademik mereka.
 
 ### 🎯 Tujuan
