@@ -132,7 +132,7 @@ summarization_params = {
 - Analisis feature importance  
 - Alat interpretabilitas model
 
-#### 3. Summarization Mutakhir
+#### 3. Summarization Quality
 - Integrasi IBM Granite via Replicate API  
 - Kapabilitas batch processing  
 - Metrik kualitas (rasio kompresi, readability)  
