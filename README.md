@@ -222,7 +222,7 @@ param_grid_fast = {
 - Automated Content Analysis Systems
 
 ### 🤝 Kontribusi
-Ini adalah proyek capstone, namun saran dan perbaikan sangat disambut:
+Ini adalah contoh proyek capstone untuk Hacktiv8, namun saran dan perbaikan sangat diapresiasi🙏:
 1. Fork repository  
 2. Buat feature branch Anda  
 3. Commit perubahan Anda  
@@ -253,5 +253,3 @@ Proyek ini untuk tujuan edukasi. Mohon hargai lisensi dataset dan ketentuan laya
 - **Visualisasi**: 20+ chart interaktif  
 - **Waktu Pemrosesan**: ~45–60 menit total  
 - **Dokumentasi**: Komprehensif dengan contoh
-
-🎯 **Siap menjelajahi pola penggunaan AI assistant? Mulai dari notebook 01 dan ikuti perjalanannya!**
