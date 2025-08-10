@@ -180,29 +180,6 @@ Proyek capstone ini memanfaatkan berbagai teknologi AI untuk menciptakan framewo
 #### 1. IBM Granite untuk Text Summarization
 **Fungsinya:** IBM Granite 3.2-8b-instruct adalah large language model yang dirancang khusus untuk tugas instruction-following, termasuk text summarization.
 
-**Cara integrasinya:**
-```python
-# Contoh implementasi
-import replicate
-
-def summarize_text(text, max_tokens=100):
-    """
-    Meringkas feedback mahasiswa menggunakan IBM Granite
-    """
-    prompt = f"Ringkas feedback mahasiswa berikut tentang penggunaan AI: {text}"
-    
-    output = replicate.run(
-        "ibm-granite/granite-3.2-8b-instruct",
-        input={
-            "prompt": prompt,
-            "max_tokens": max_tokens,
-            "temperature": 0.3,  # Temperature rendah untuk ringkasan konsisten
-            "top_p": 0.9
-        }
-    )
-    return output
-```
-
 **Manfaat untuk proyek:**
 - **Konsistensi**: Pendekatan summarization terstandar di semua data teks
 - **Skalabilitas**: Dapat memproses ratusan entri feedback secara otomatis
@@ -217,19 +194,6 @@ def summarize_text(text, max_tokens=100):
 - Memprediksi perilaku mahasiswa berdasarkan fitur demografis dan akademik
 - Mengidentifikasi mahasiswa berisiko yang mungkin menjadi terlalu bergantung pada AI
 
-**Feature Engineering:**
-```python
-# Pembuatan fitur yang ditingkatkan AI
-def create_ai_features(df):
-    """
-    Membuat fitur yang menangkap pola penggunaan AI
-    """
-    df['usage_intensity'] = df['daily_queries'] * df['session_length']
-    df['academic_dependency'] = df['homework_ai_use'] / df['total_assignments']
-    df['subject_diversity'] = df['subjects_using_ai'].apply(lambda x: len(x.split(',')))
-    
-    return df
-```
 
 #### 3. Pipeline Natural Language Processing
 **NLTK dan TextStat** menyediakan analisis teks dasar:
@@ -239,23 +203,6 @@ def create_ai_features(df):
 - Analisis sentiment feedback
 - Scoring keterbacaan ringkasan yang dihasilkan AI
 
-**Quality Metrics:**
-```python
-import textstat
-
-def evaluate_summary_quality(original_text, summary):
-    """
-    Evaluasi kualitas ringkasan yang dihasilkan AI
-    """
-    metrics = {
-        'compression_ratio': len(summary) / len(original_text),
-        'readability_original': textstat.flesch_reading_ease(original_text),
-        'readability_summary': textstat.flesch_reading_ease(summary),
-        'key_info_retention': calculate_information_overlap(original_text, summary)
-    }
-    return metrics
-```
-
 #### 4. Intelligent Data Visualization
 **Plotly with AI-enhanced insights:**
 
@@ -264,98 +211,13 @@ def evaluate_summary_quality(original_text, summary):
 - Menyarankan jenis chart optimal berdasarkan karakteristik data
 - Menghasilkan judul dan anotasi deskriptif
 
-**Dashboard Interaktif:**
-```python
-def create_intelligent_dashboard(df, ai_insights):
-    """
-    Membuat dashboard dengan visualisasi yang direkomendasikan AI
-    """
-    # AI menyarankan hubungan mana yang perlu divisualisasikan
-    important_correlations = ai_insights['top_correlations']
-    
-    fig = make_subplots(rows=2, cols=2, 
-                        subplot_titles=ai_insights['chart_titles'])
-    
-    # Tambahkan plot yang direkomendasikan AI
-    for i, correlation in enumerate(important_correlations):
-        add_correlation_plot(fig, df, correlation, row=(i//2)+1, col=(i%2)+1)
-    
-    return fig
-```
-
-#### 5. Predictive Analytics and Recommendations
-**Sistem rekomendasi berbasis AI:**
-
-**Panduan Mahasiswa:**
-- Rekomendasi penggunaan AI yang dipersonalisasi berdasarkan gaya belajar
-- Sistem peringatan dini untuk ketergantungan berlebihan
-- Saran tools AI khusus mata pelajaran
-
-**Rekomendasi Institusional:**
-```python
-def generate_institutional_recommendations(usage_data, performance_data):
-    """
-    Rekomendasi yang dihasilkan AI untuk institusi pendidikan
-    """
-    # Analisis pola dan hasilkan wawasan yang dapat ditindaklanjuti
-    recommendations = []
-    
-    # Korelasi penggunaan tinggi dengan penurunan performa
-    if correlation(usage_data['ai_dependency'], performance_data['grades']) < -0.3:
-        recommendations.append({
-            'priority': 'high',
-            'category': 'academic_integrity',
-            'recommendation': 'Implementasikan panduan penggunaan AI dan program training'
-        })
-    
-    # Pola khusus mata pelajaran
-    stem_usage = usage_data[usage_data['field'] == 'STEM']['usage_frequency'].mean()
-    humanities_usage = usage_data[usage_data['field'] == 'Humanities']['usage_frequency'].mean()
-    
-    if stem_usage > humanities_usage * 1.5:
-        recommendations.append({
-            'priority': 'medium',
-            'category': 'curriculum',
-            'recommendation': 'Kembangkan program literasi AI khusus STEM'
-        })
-    
-    return recommendations
-```
-
-#### 6. Quality Assurance and Validation
+#### 5. Quality Assurance and Validation
 **Proses validasi yang dibantu AI:**
 
 **Pemeriksaan Kualitas Data:**
 - Deteksi otomatis respons anomali
 - Validasi konsistensi di seluruh respons survei
 - Deteksi bias dalam respons teks
-
-**Validasi Model:**
-```python
-def ai_assisted_model_validation(models, test_data):
-    """
-    Gunakan AI untuk memberikan interpretasi hasil model
-    """
-    results = {}
-    
-    for name, model in models.items():
-        predictions = model.predict(test_data)
-        
-        # AI menginterpretasi hasil dan memberikan wawasan
-        interpretation = generate_model_interpretation(
-            model_name=name,
-            feature_importance=model.feature_importances_ if hasattr(model, 'feature_importances_') else None,
-            predictions=predictions,
-            actual=test_data.target
-        )
-        
-        results[name] = {
-            'accuracy': accuracy_score(test_data.target, predictions),
-            'interpretation': interpretation
-        }
-    
-    return results
-```
 
 #### Etika AI dan Keterbatasannya
 
