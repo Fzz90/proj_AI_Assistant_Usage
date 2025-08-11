@@ -44,30 +44,7 @@ proj_AI_Assistant_Usage/
 
 ### 🚀 Quick Start
 
-#### 1. Setup Environment
-```bash
-# Install package yang diperlukan (di Google Colab)
-!pip install -r requirements.txt
-
-# Atau install package individual:
-!pip install plotly replicate wordcloud textstat
-```
-
-#### 2. Konfigurasi API
-```python
-# Setup Replicate API untuk akses IBM Granite
-import os
-os.environ["REPLICATE_API_TOKEN"] = "token_replicate_anda_disini"
-```
-
-#### 3. Upload Dataset
-```python
-# Gunakan file upload Google Colab
-from google.colab import files
-uploaded = files.upload()
-```
-
-#### 4. Urutan Eksekusi Notebook
+#### Urutan Eksekusi Notebook
 Jalankan notebook dalam urutan berikut:
 1. `01_data_exploration.ipynb` - Memahami data Anda
 2. `02_data_preprocessing.ipynb` - Membersihkan dan mempersiapkan data
@@ -79,8 +56,8 @@ Jalankan notebook dalam urutan berikut:
 ### 📈 Hasil yang Diharapkan
 
 #### Performa Klasifikasi
-- **Model Terbaik**: Random Forest (diharapkan ~85% akurasi)
-- **Metrik**: Precision, Recall, F1-Score, Cross-validation scores
+- **Model Terbaik**: Random Forest
+- **Metrik**: Accuracy, Precision, Recall, F1-Score, Cross-validation scores
 - **Fitur**: Analisis feature importance dan interpretabilitas
 
 #### Kualitas Summarization
