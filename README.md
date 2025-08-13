@@ -5,15 +5,15 @@
 Proyek ini menganalisis pola penggunaan AI assistant di kalangan mahasiswa menggunakan teknik machine learning canggih untuk klasifikasi dan text summarization. Proyek ini menggabungkan algoritma ML tradisional dengan model AI modern (IBM Granite) untuk memberikan wawasan komprehensif tentang bagaimana mahasiswa berinteraksi dengan tools AI dalam perjalanan akademik.
 
 ### 🎯 Tujuan
-- **Klasifikasi**: Mengkategorikan pola penggunaan AI assistant secara otomatis (Akademik, Personal, Kreatif)
-- **Summarization**: Menghasilkan ringkasan singkat dari feedback mahasiswa menggunakan IBM Granite
+- **Klasifikasi**: Mengungkap dan mengklasifikasi secara otomatis pola penggunaan AI Assistant di berbagai bidang studi, mulai dari brainstorming, penulisan, hingga belajar—serta menganalisis final outcome terhadap hasil akhir yang dihasilkan
+- **Summarization**: Menghasilkan ringkasan singkat dari feedback mahasiswa menggunakan model IBM Granite
 - **Analisis**: Mengidentifikasi faktor-faktor penting yang mempengaruhi adopsi dan penggunaan AI dalam pendidikan
 - **Insight**: Memberikan rekomendasi yang dapat ditindaklanjuti untuk institusi pendidikan dan developer AI
 
 ### 📊 Dataset
 - **Sumber**: Kaggle - AI Assistant Usage in Student Life (Synthetic) (https://www.kaggle.com/datasets/ayeshasal89/ai-assistant-usage-in-student-life-synthetic)
 - **Size**: Variabel (tergantung dataset yang dipilih)
-- **Fitur**: Campuran (kategorikal, numerik, teks)
+- **Fitur**: Kategorikal
 - **Target**: Kategori/pola penggunaan
 
 ### 🛠️ Technology Stack
@@ -81,20 +81,11 @@ Analisis mengungkapkan beberapa wawasan penting tentang penggunaan AI assistant 
 - **20% Kreatif**: Bantuan menulis, brainstorming, proyek kreatif  
 - **10% Personal**: Perencanaan harian, percakapan kasual, hiburan
 
-**2. Frekuensi Penggunaan berdasarkan Tingkat Akademik**
-- **Mahasiswa S2/S3**: 85% penggunaan harian, terutama untuk riset dan thesis
-- **Mahasiswa S1**: 60% penggunaan mingguan, fokus pada bantuan tugas
-- **Siswa SMA**: 40% penggunaan sesekali, terutama untuk bantuan PR
-
-**3. Preferensi Bidang Studi**
+**2. Preferensi Bidang Studi**
 - **Bidang STEM**: Penggunaan lebih tinggi untuk problem-solving dan klarifikasi konsep (78%)
 - **Humaniora**: Penekanan pada bantuan menulis dan panduan riset (65%)
 - **Seni & Desain**: Creative brainstorming dan ideasi proyek (58%)
 
-**4. Pola Penggunaan Berbasis Waktu**
-- **Jam Puncak**: 19.00-21.00 (sesi belajar malam)
-- **Hari Kerja vs Weekend**: Rasio 3:1 lebih banyak di hari kerja
-- **Periode Ujian**: Peningkatan 300% dalam penggunaan selama minggu UAS
 
 #### Analisis Feature Importance
 Model machine learning mengidentifikasi prediktor kunci pola penggunaan AI:
@@ -164,7 +155,7 @@ Proyek capstone ini memanfaatkan berbagai teknologi AI untuk menciptakan framewo
 - **Kecepatan**: Memproses setiap sampel teks dalam 2-3 detik
 
 #### 2. Model Machine Learning untuk Pengenalan Pola
-**Algoritma ML tradisional** (Random Forest, SVM, Gradient Boosting, Logistic Regression) bekerja bersama AI untuk:
+**Algoritma ML tradisional** (Random Forest, SVM, XGBoost, Logistic Regression) bekerja bersama AI untuk:
 
 **Tugas Klasifikasi:**
 - Mengkategorikan pola penggunaan secara otomatis (Akademik/Personal/Kreatif)
@@ -183,7 +174,7 @@ Proyek capstone ini memanfaatkan berbagai teknologi AI untuk menciptakan framewo
 #### 4. Intelligent Data Visualization
 **Plotly with AI-enhanced insights:**
 
-**Generasi Chart Otomatis:**
+**Generate Chart Otomatis:**
 - AI mengidentifikasi pola paling signifikan untuk visualisasi
 - Menyarankan jenis chart optimal berdasarkan karakteristik data
 - Menghasilkan judul dan anotasi deskriptif
@@ -221,29 +212,6 @@ Proyek capstone ini memanfaatkan berbagai teknologi AI untuk menciptakan framewo
 4. **Federated Learning**: Pembelajaran kolaboratif antar institusi sambil menjaga privasi
 
 Pendekatan terintegrasi AI ini memastikan bahwa proyek capstone tidak hanya menganalisis penggunaan AI mahasiswa tetapi juga mendemonstrasikan praktik terbaik untuk implementasi AI yang bertanggung jawab dalam penelitian pendidikan.
-
-### 🔧 Opsi Konfigurasi
-
-#### Parameter Model
-```python
-# Model klasifikasi dapat dikonfigurasi:
-models = {
-    'Random Forest': RandomForestClassifier(n_estimators=100, random_state=42),
-    'Gradient Boosting': GradientBoostingClassifier(random_state=42),
-    'Logistic Regression': LogisticRegression(max_iter=1000, random_state=42),
-    'SVM': SVC(probability=True, random_state=42)
-}
-```
-
-#### Parameter Summarization
-```python
-# Pengaturan summarization IBM Granite:
-summarization_params = {
-    "max_tokens": 50,      # Panjang ringkasan
-    "temperature": 0.3,    # Level kreativitas
-    "top_p": 0.9          # Nucleus sampling
-}
-```
 
 ### 📊 Fitur Utama
 
@@ -300,41 +268,6 @@ summarization_params = {
 - Mengembangkan tools AI pendidikan yang lebih baik
 - Berkontribusi pada diskusi etika AI
 
-### 🔍 Troubleshooting
-
-#### Masalah Umum dan Solusi
-
-**1. Masalah Koneksi API**
-```python
-# Test koneksi Replicate
-def test_api_connection():
-    try:
-        output = replicate.run("ibm-granite/granite-3.2-8b-instruct", 
-                              input={"prompt": "Hello", "max_tokens": 10})
-        print("✅ API berhasil terhubung")
-        return True
-    except Exception as e:
-        print(f"❌ Error API: {e}")
-        return False
-```
-
-**2. Masalah Memory dengan Dataset Besar**
-```python
-# Proses data dalam chunks
-def process_in_chunks(df, chunk_size=1000):
-    for i in range(0, len(df), chunk_size):
-        yield df[i:i + chunk_size]
-```
-
-**3. Waktu Training Model**
-```python
-# Gunakan parameter grid yang dikurangi untuk training lebih cepat
-param_grid_fast = {
-    'n_estimators': [50, 100],  # Dikurangi dari [50, 100, 200]
-    'max_depth': [10, None]     # Dikurangi dari [10, 20, None]
-}
-```
-
 ### 📚 Sumber Tambahan
 
 #### Materi Pembelajaran
@@ -342,12 +275,6 @@ param_grid_fast = {
 - [Dokumentasi Plotly Python](https://plotly.com/python/)
 - [Detail Model IBM Granite](https://replicate.com/ibm-granite/granite-3.2-8b-instruct)
 - [NLTK Book](https://www.nltk.org/book/)
-
-#### Proyek Terkait
-- Klasifikasi Teks dengan Transformers
-- Teknik Educational Data Mining
-- Penelitian Etika AI dalam Pendidikan
-- Sistem Analisis Konten Otomatis
 
 ### 🤝 Kontribusi
 Ini adalah proyek capstone untuk Hacktiv8, saran dan perbaikan selalu terbuka🙏:
