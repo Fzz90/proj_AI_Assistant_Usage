@@ -13,7 +13,7 @@ Proyek ini menganalisis pola penggunaan AI assistant di kalangan mahasiswa mengg
 ### 📊 Dataset
 - **Sumber**: Kaggle - AI Assistant Usage in Student Life (Synthetic) (https://www.kaggle.com/datasets/ayeshasal89/ai-assistant-usage-in-student-life-synthetic)
 - **Size**: Variabel (tergantung dataset yang dipilih)
-- **Fitur**: Kategorikal
+- **Fitur**: Kategorikal & Numerikal
 - **Target**: Kategori/pola penggunaan
 
 ### 🛠️ Technology Stack
