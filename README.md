@@ -91,11 +91,11 @@ Analisis mengungkapkan beberapa wawasan penting tentang penggunaan AI assistant 
 Model machine learning mengidentifikasi prediktor kunci pola penggunaan AI:
 
 **5 Fitur Prediktif Teratas:**
-1. **Tahun Akademik** (importance: 0.24) - Status pascasarjana vs sarjana
-2. **Bidang Studi** (importance: 0.19) - Disiplin STEM vs non-STEM
-3. **Jam Belajar per Minggu** (importance: 0.16) - Korelasi dengan ketergantungan AI
-4. **Tingkat Kenyamanan Teknologi** (importance: 0.14) - Pengalaman teknologi sebelumnya
-5. **Penggunaan Teman Sebaya** (importance: 0.12) - Pengaruh sosial pada adopsi
+1. **StudentType (Tipe Pelajar)** (importance: 0.24) - Status pascasarjana vs sarjana
+2. **Discipline (Bidang Studi)** (importance: 0.19) - Disiplin STEM vs non-STEM
+3. **AI Assistance Level** (importance: 0.16) - Korelasi dengan level bantuan oleh AI
+4. **Tingkat Kepuasan** (importance: 0.14) - Pengalaman kepuasan dari penggunaan AI
+5. **Total Prompt** (importance: 0.12) - Prompt yang dikeluarkan dalam penggunaan AI
 
 #### Text Analysis Insights
 Melalui analisis summarization dari feedback mahasiswa, kami menemukan:
@@ -276,22 +276,9 @@ Pendekatan terintegrasi AI ini memastikan bahwa proyek capstone tidak hanya meng
 - [Detail Model IBM Granite](https://replicate.com/ibm-granite/granite-3.2-8b-instruct)
 - [NLTK Book](https://www.nltk.org/book/)
 
-### 🤝 Kontribusi
-Ini adalah proyek capstone untuk Hacktiv8, saran dan perbaikan selalu terbuka🙏:
-1. Fork repository
-2. Buat feature branch Anda
-3. Commit perubahan Anda
-4. Push ke branch
-5. Buat Pull Request
 
 ### 📝 Lisensi
 Proyek ini untuk tujuan pendidikan. Harap hormati lisensi dataset dan terms of service API.
-
-### 🙏 Penghargaan
-- Kaggle untuk menyediakan dataset
-- IBM dan Replicate untuk akses API
-- Komunitas open source untuk library yang sangat baik
-- Institusi pendidikan untuk bimbingan proyek
 
 ### 📞 Kontak
 - **Email**: faizsyihab77@gmail.com
