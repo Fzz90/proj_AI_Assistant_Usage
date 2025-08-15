@@ -90,13 +90,14 @@ Analisis mengungkapkan beberapa wawasan penting tentang penggunaan AI assistant 
 #### Analisis Feature Importance
 Model machine learning mengidentifikasi prediktor kunci pola penggunaan AI:
 
-**5 Fitur Prediktif Teratas:**
+**Fitur Prediktif Teratas:**
 1. **StudentType (High School, Undergraduate, Graduate)**
 2. **Discipline (Biology, CS, Engineering, Math, Psychology, History, Business)** 
 3. **AIAssistanceLevel** (1, 2, 3, 4, 5) 
 4. **SatisfactionRating** (1.0 ~ 5.0) 
 5. **Total Prompt** (1 ~ 39)
-6. **TaskType** (Writing, Studying, Homework Help, Coding, Brainstorming, Research) 
+6. **TaskType** (Writing, Studying, Homework Help, Coding, Brainstorming, Research)
+7. **Final Oucome** (Assignment Completed, Idea Drafted, Confused, Gave Up)
 
 #### Text Analysis Insights
 Melalui analisis summarization dari feedback mahasiswa, kami menemukan:
