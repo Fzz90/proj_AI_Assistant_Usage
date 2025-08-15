@@ -91,11 +91,12 @@ Analisis mengungkapkan beberapa wawasan penting tentang penggunaan AI assistant 
 Model machine learning mengidentifikasi prediktor kunci pola penggunaan AI:
 
 **5 Fitur Prediktif Teratas:**
-1. **StudentType (Tipe Pelajar)** (importance: 0.24) - Status pascasarjana vs sarjana
-2. **Discipline (Bidang Studi)** (importance: 0.19) - Disiplin STEM vs non-STEM
-3. **AI Assistance Level** (importance: 0.16) - Korelasi dengan level bantuan oleh AI
-4. **Tingkat Kepuasan** (importance: 0.14) - Pengalaman kepuasan dari penggunaan AI
-5. **Total Prompt** (importance: 0.12) - Prompt yang dikeluarkan dalam penggunaan AI
+1. **StudentType (High School, Undergraduate, Graduate)**- Status pascasarjana vs sarjana
+2. **Discipline (Biology, CS, Engineering, Math, Psychology, History, Business)**  - Disiplin STEM vs non-STEM
+3. **AIAssistanceLevel** (1, 2, 3, 4, 5)  - Korelasi dengan level bantuan oleh AI
+4. **SatisfactionRating** (1.0 ~ 5.0)  - Pengalaman kepuasan dari penggunaan AI
+5. **Total Prompt** (1 ~ 39) - Prompt yang dikeluarkan dalam penggunaan AI
+6. **TaskType** (Writing, Studying, Homework Help, Coding, Brainstorming, Research) - Penggunaan AI dalam akademik 
 
 #### Text Analysis Insights
 Melalui analisis summarization dari feedback mahasiswa, kami menemukan:
