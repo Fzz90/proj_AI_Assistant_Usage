@@ -36,7 +36,7 @@ Penelitian ini bertujuan untuk memahami bagaimana mahasiswa dari berbagai disipl
 #### Performa Klasifikasi
 - **Model Terbaik**: Tergantung target variable
 - **Metrik**: Accuracy, Precision, Recall, F1-Score, Cross-validation mean
-- **Fitur**: Analisis feature importance dan interpretabilitas
+- **Fitur**: Analisis feature importance
 
 #### Kualitas Summarization
 - **Kompresi**: ~70% pengurangan teks
