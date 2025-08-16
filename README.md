@@ -2,7 +2,7 @@
 ## Data Classification and Summarization Analysis
 
 ### 📋 Overview
-Proyek ini menganalisis pola penggunaan AI assistant di kalangan mahasiswa menggunakan teknik machine learning canggih untuk klasifikasi dan text summarization. Proyek ini menggabungkan algoritma ML tradisional dengan model AI modern (IBM Granite) untuk memberikan wawasan komprehensif tentang bagaimana mahasiswa berinteraksi dengan tools AI dalam perjalanan akademik.
+Proyek ini menganalisis pola penggunaan AI assistant di kalangan mahasiswa menggunakan teknik machine learning canggih untuk klasifikasi dan text summarization. Proyek ini menggabungkan algoritma ML tradisional dengan model AI modern (IBM Granite) untuk memberikan insight komprehensif tentang bagaimana mahasiswa berinteraksi dengan tools AI dalam perjalanan akademik.
 
 ### 🎯 Tujuan
 - **Klasifikasi**: Mengungkap dan mengklasifikasi secara otomatis pola penggunaan AI Assistant di berbagai bidang studi, mulai dari brainstorming, penulisan, hingga belajar—serta menganalisis final outcome terhadap hasil akhir yang dihasilkan
@@ -24,40 +24,18 @@ Proyek ini menganalisis pola penggunaan AI assistant di kalangan mahasiswa mengg
 - **Visualisasi**: Plotly, Matplotlib, Seaborn
 - **Text Processing**: NLTK, TextStat
 
-### 📁 Struktur Proyek
-```
-proj_AI_Assistant_Usage/
-├── notebooks/
-│   ├── 01_data_exploration.ipynb          # Eksplorasi dan analisis data
-│   ├── 02_data_preprocessing.ipynb        # Pembersihan dan persiapan data
-│   ├── 03_classification_analysis.ipynb   # Training dan evaluasi model ML
-│   ├── 04_text_summarization.ipynb       # Text summarization dengan IBM Granite
-│   ├── 05_model_evaluation.ipynb         # Evaluasi model komprehensif
-│   └── 06_visualization_dashboard.ipynb   # Visualisasi interaktif
-├── data/
-│   └── [file dataset - upload via notebook]
-├── requirements.txt                       # Dependencies proyek
-├── README.md                             # File ini
-└── presentation/
-    └── presentation_structure.md         # Outline presentasi
-```
 
 ### 🚀 Quick Start
 
-#### Urutan Eksekusi Notebook
-Jalankan notebook dalam urutan berikut:
-1. `01_data_exploration.ipynb` - Memahami data Anda
-2. `02_data_preprocessing.ipynb` - Membersihkan dan mempersiapkan data
-3. `03_classification_analysis.ipynb` - Training model ML
-4. `04_text_summarization.ipynb` - Generate summary
-5. `05_model_evaluation.ipynb` - Evaluasi model secara komprehensif
-6. `06_visualization_dashboard.ipynb` - Membuat visualisasi final
+#### Eksekusi Notebook
+1. `01_data_class&visualization.ipynb` - Klasifikasi data serta visualisasinya
+2. `02_text_summarization.ipynb` - Summarize text 
 
 ### 📈 Hasil yang Diharapkan
 
 #### Performa Klasifikasi
-- **Model Terbaik**: Random Forest
-- **Metrik**: Accuracy, Precision, Recall, F1-Score, Cross-validation scores
+- **Model Terbaik**: Tergantung target variable
+- **Metrik**: Accuracy, Precision, Recall, F1-Score, Cross-validation mean
 - **Fitur**: Analisis feature importance dan interpretabilitas
 
 #### Kualitas Summarization
