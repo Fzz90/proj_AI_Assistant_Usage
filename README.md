@@ -1,4 +1,4 @@
-# 🎓 Capstone Project: Penggunaan AI Assistant terhadap kehidupan Akademis Pelajar
+# 🎓 Capstone Project: Penggunaan AI Assistant Terhadap Kehidupan Akademis Pelajar
 ## Data Classification and Summarization Analysis
 
 ---
