@@ -8,8 +8,8 @@ Penelitian ini bertujuan untuk memahami bagaimana mahasiswa dari berbagai disipl
 - **Klasifikasi**: Mengungkap dan mengklasifikasi secara otomatis pola penggunaan AI Assistant di berbagai bidang studi, mulai dari brainstorming, penulisan, hingga belajar—serta menganalisis final outcome terhadap hasil akhir yang dihasilkan
 - **Summarization**: Menghasilkan ringkasan singkat dari feedback mahasiswa menggunakan model IBM Granite
 - **Analisis**: Mengidentifikasi faktor-faktor penting yang mempengaruhi adopsi dan penggunaan AI dalam pendidikan
-- **Insight**: Memberikan rekomendasi yang dapat ditindaklanjuti untuk institusi pendidikan dan developer AI
-
+- **Insight**: Memberikan rekomendasi yang dapat ditindaklanjuti
+- 
 ### 📊 Dataset
 - **Sumber**: Kaggle - AI Assistant Usage in Student Life (Synthetic) (https://www.kaggle.com/datasets/ayeshasal89/ai-assistant-usage-in-student-life-synthetic)
 - **Size**: Variabel (tergantung dataset yang dipilih)
