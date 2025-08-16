@@ -108,6 +108,7 @@ Model machine learning mengidentifikasi prediktor kunci pola penggunaan AI:
 5. **Total Prompt** (1 ~ 39)
 6. **TaskType** (Writing, Studying, Homework Help, Coding, Brainstorming, Research)
 7. **Final Oucome** (Assignment Completed, Idea Drafted, Confused, Gave Up)
+8. **SessionLengthMin** (Penggunaaan AI dalam hitungan menit)
 
 #### Text Analysis Insights
 Melalui analisis summarization dari feedback mahasiswa, kami menemukan:
