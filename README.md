@@ -1,15 +1,42 @@
 # 🎓 Capstone Project: Penggunaan AI Assistant dalam Kehidupan Mahasiswa
 ## Data Classification and Summarization Analysis
 
-### 📋 Overview
-Penelitian ini bertujuan untuk memahami bagaimana mahasiswa dari berbagai disiplin ilmu menggunakan AI Assistant dalam menyelesaikan tugas. Dengan menganalisis hubungan antara jenis tugas (TaskType), tingkat bantuan AI (AI_AssistanceLevel), dan hasil akhir (FinalOutcome) terhadap kepuasan (SatisfactionRating), penelitian ini mencoba mengungkap apakah AI benar-benar membantu peningkatan kualitas tugas dan pengalaman belajar mahasiswa. Proyek ini menggunakan teknik machine learning canggih untuk klasifikasi dan text summarization. Proyek ini menggabungkan algoritma ML tradisional dengan model AI modern (IBM Granite) untuk memberikan insight komprehensif tentang bagaimana mahasiswa berinteraksi dengan tools AI dalam perjalanan akademik.
+---
+
+## 📖 Overview Penelitian
+
+### Latar Belakang
+
+Perkembangan teknologi kecerdasan buatan (AI) semakin pesat dalam dunia pendidikan, terutama melalui pemanfaatan *AI Assistant* yang mampu memberikan bantuan instan dalam memahami konsep, menyelesaikan tugas, maupun menghasilkan ide kreatif. Mahasiswa dari berbagai disiplin ilmu kini semakin bergantung pada teknologi ini untuk menunjang proses belajar. Namun, meskipun adopsinya meluas, masih terdapat pertanyaan mendasar mengenai sejauh mana *AI Assistant* benar-benar berkontribusi terhadap peningkatan kualitas tugas, pemahaman konsep, serta kepuasan belajar mahasiswa.
+
+### Permasalahan
+
+Meskipun AI menawarkan potensi besar, terdapat beberapa tantangan yang perlu dipecahkan:
+
+1. **Variasi Penggunaan** – Mahasiswa menggunakan AI untuk jenis tugas berbeda (*TaskType*), mulai dari penulisan esai, analisis data, hingga brainstorming ide. Efektivitas bantuan AI mungkin berbeda untuk setiap jenis tugas.
+2. **Tingkat Ketergantungan** – Tingkat bantuan AI (*AI\_AssistanceLevel*) yang digunakan mahasiswa bervariasi, dari sekadar referensi tambahan hingga sepenuhnya menggantikan proses berpikir. Hal ini menimbulkan pertanyaan tentang keseimbangan antara kemandirian dan ketergantungan.
+3. **Dampak Hasil Akhir** – Belum jelas apakah keterlibatan AI secara langsung berhubungan dengan kualitas tugas (*FinalOutcome*) dan kepuasan mahasiswa (*SatisfactionRating*).
+4. **Kesenjangan Pengetahuan** – Sebagian penelitian hanya menyoroti sisi positif penggunaan AI tanpa mengeksplorasi potensi risiko, seperti menurunnya kemampuan berpikir kritis atau kreativitas mahasiswa.
+
+### Pendekatan Penelitian
+
+Untuk menjawab permasalahan tersebut, penelitian ini mengadopsi pendekatan analitis berbasis *machine learning* dengan tahapan sebagai berikut:
+
+1. **Pengumpulan Data** – Data interaksi mahasiswa dengan AI Assistant dikategorikan berdasarkan jenis tugas, tingkat bantuan AI, hasil akhir, dan kepuasan pengguna.
+2. **Klasifikasi dan Analisis Hubungan** – Algoritma *machine learning* tradisional digunakan untuk mengidentifikasi serta mengklasifikasikan pola penggunaan *AI Assistant*. Selanjutnya, dilakukan analisis hubungan antarvariabel utama, yaitu *TaskType, AI\_AssistanceLevel, FinalOutcome, SatisfactionRating, Discipline, StudentLevel, TotalPrompt,* dan *SessionLengthMin* (durasi penggunaan AI dalam menit).
+3. **Text Summarization** – Model AI modern (IBM Granite) dimanfaatkan untuk melakukan *summarization* dari tanggapan mahasiswa, sehingga diperoleh gambaran yang lebih komprehensif mengenai pengalaman belajar mereka.
+4. **Integrasi Insight** – Hasil dari metode tradisional dan model AI modern digabungkan untuk memberikan insight yang seimbang: kuantitatif (berbasis data dan klasifikasi) dan kualitatif (berbasis ringkasan pengalaman mahasiswa).
+
+### Kesimpulan Sementara
+
+Dengan pendekatan ini, penelitian diharapkan mampu menjawab pertanyaan utama: *Apakah penggunaan AI Assistant benar-benar meningkatkan kualitas hasil belajar mahasiswa, atau justru menciptakan bentuk ketergantungan baru?*
 
 ### 🎯 Tujuan
-- **Klasifikasi**: Mengungkap dan mengklasifikasi secara otomatis pola penggunaan AI Assistant di berbagai bidang studi, mulai dari brainstorming, penulisan, hingga belajar—serta menganalisis final outcome terhadap hasil akhir yang dihasilkan
-- **Summarization**: Menghasilkan ringkasan singkat dari feedback mahasiswa menggunakan model IBM Granite
-- **Analisis**: Mengidentifikasi faktor-faktor penting yang mempengaruhi adopsi dan penggunaan AI dalam pendidikan
-- **Insight**: Memberikan rekomendasi yang dapat ditindaklanjuti
-- 
+- **Klasifikasi:** Mengidentifikasi serta mengklasifikasikan pola penggunaan AI Assistant pada berbagai disiplin ilmu, mencakup aktivitas brainstorming, penulisan akademik, dan pembelajaran, serta menganalisis keterkaitannya dengan final outcome yang diperoleh mahasiswa.
+- **Summarization:** Menghasilkan ringkasan terstruktur dan representatif dari umpan balik mahasiswa dengan memanfaatkan kapabilitas model IBM Granite, sehingga diperoleh pemahaman kualitatif yang lebih mendalam.
+- **Analisis:** Mengkaji faktor-faktor determinan yang mempengaruhi tingkat adopsi, variasi pemanfaatan, serta efektivitas penggunaan AI dalam konteks pendidikan tinggi.
+- **Insight:** Merumuskan rekomendasi strategis yang berbasis temuan empiris guna mendukung mahasiswa, pendidik, dan institusi pendidikan dalam mengoptimalkan integrasi AI pada proses pembelajaran.
+  
 ### 📊 Dataset
 - **Sumber**: Kaggle - AI Assistant Usage in Student Life (Synthetic) (https://www.kaggle.com/datasets/ayeshasal89/ai-assistant-usage-in-student-life-synthetic)
 - **Size**: Variabel (tergantung dataset yang dipilih)
@@ -67,7 +94,7 @@ Analisis mengungkapkan beberapa wawasan penting tentang penggunaan AI assistant 
 - Biology punya tantangan dalam memahami hasil (highest confusion), tapi tetap rendah dalam menyerah.
 
 **3. Hubungan Discipline dengan Total Prompt yang dihasilkan**
-Mayoritas mahasiswa dari berbagai disiplin menggunakan AI assistant dengan intensitas rendah–sedang (median 3–4 prompts), dengan rata-rata hampir sama di semua bidang. Namun, terdapat kelompok kecil heavy users di setiap disiplin yang mendorong nilai maksimum tinggi (hingga 39 prompts). Variasi individu lebih berperan daripada perbedaan disiplin ilmu.
+- Mayoritas mahasiswa dari berbagai disiplin menggunakan AI assistant dengan intensitas rendah–sedang (median 3–4 prompts), dengan rata-rata hampir sama di semua bidang. Namun, terdapat kelompok kecil heavy users di setiap disiplin yang mendorong nilai maksimum tinggi (hingga 39 prompts). Variasi individu lebih berperan daripada perbedaan disiplin ilmu.
 
 
 #### Analisis Fitur
