@@ -1,8 +1,8 @@
-# 🎓 Capstone Project: Penggunaan AI Assistant dalam Kehidupan Mahasiswa
+<img width="578" height="309" alt="image" src="https://github.com/user-attachments/assets/9bbab25e-ec28-4568-8c12-d863a482bc87" /># 🎓 Capstone Project: Penggunaan AI Assistant dalam Kehidupan Mahasiswa
 ## Data Classification and Summarization Analysis
 
 ### 📋 Overview
-Proyek ini menganalisis pola penggunaan AI assistant di kalangan mahasiswa menggunakan teknik machine learning canggih untuk klasifikasi dan text summarization. Proyek ini menggabungkan algoritma ML tradisional dengan model AI modern (IBM Granite) untuk memberikan insight komprehensif tentang bagaimana mahasiswa berinteraksi dengan tools AI dalam perjalanan akademik.
+Penelitian ini bertujuan untuk memahami bagaimana mahasiswa dari berbagai disiplin ilmu menggunakan AI Assistant dalam menyelesaikan tugas. Dengan menganalisis hubungan antara jenis tugas (TaskType), tingkat bantuan AI (AI_AssistanceLevel), dan hasil akhir (FinalOutcome) terhadap kepuasan (SatisfactionRating), penelitian ini mencoba mengungkap apakah AI benar-benar membantu peningkatan kualitas tugas dan pengalaman belajar mahasiswa. Proyek ini menggunakan teknik machine learning canggih untuk klasifikasi dan text summarization. Proyek ini menggabungkan algoritma ML tradisional dengan model AI modern (IBM Granite) untuk memberikan insight komprehensif tentang bagaimana mahasiswa berinteraksi dengan tools AI dalam perjalanan akademik.
 
 ### 🎯 Tujuan
 - **Klasifikasi**: Mengungkap dan mengklasifikasi secara otomatis pola penggunaan AI Assistant di berbagai bidang studi, mulai dari brainstorming, penulisan, hingga belajar—serta menganalisis final outcome terhadap hasil akhir yang dihasilkan
@@ -54,18 +54,23 @@ Proyek ini menganalisis pola penggunaan AI assistant di kalangan mahasiswa mengg
 #### Pola Penggunaan Mahasiswa Utama
 Analisis mengungkapkan beberapa wawasan penting tentang penggunaan AI assistant di kalangan mahasiswa:
 
-**1. Distribusi Penggunaan Akademik vs Personal**
-- **70% Akademik**: Bantuan PR, dukungan riset, penjelasan konsep
-- **20% Kreatif**: Bantuan menulis, brainstorming, proyek kreatif  
-- **10% Personal**: Perencanaan harian, percakapan kasual, hiburan
+**1. Distribusi Penggunaan TaskType vs Discipline**
+- Writing = kebutuhan utama mahasiswa hampir semua jurusan.
+- Coding digunakan lintas disiplin, tidak hanya di ilmu komputer.
+- Research surprisingly rendah, menunjukkan mahasiswa lebih suka menggunakan AI untuk membantu tugas praktis ketimbang eksplorasi akademik mendalam.
+- Math menonjol di Writing, indikasi bahwa AI dipakai untuk menjelaskan konsep dan menghasilkan laporan.
 
-**2. Preferensi Bidang Studi**
-- **Bidang STEM**: Penggunaan lebih tinggi untuk problem-solving dan klarifikasi konsep (78%)
-- **Humaniora**: Penekanan pada bantuan menulis dan panduan riset (65%)
-- **Seni & Desain**: Creative brainstorming dan ideasi proyek (58%)
+**2. Distribusi Hasil output dari penggunaan AI terhadap Discipline**
+- Math unggul dalam menyelesaikan tugas (highest completion, lowest confusion).
+- History cenderung pakai AI untuk ide drafting ketimbang langsung menyelesaikan tugas, sesuai sifat bidang yang berbasis esai dan argumentasi.
+- Computer Science unik → banyak tugas selesai, tapi juga tertinggi dalam kategori gave up. Ini bisa menandakan gap antara ekspektasi teknis dan kualitas solusi AI.
+- Biology punya tantangan dalam memahami hasil (highest confusion), tapi tetap rendah dalam menyerah.
+
+**3. Hubungan Discipline dengan Total Prompt yang dihasilkan**
+Mayoritas mahasiswa dari berbagai disiplin menggunakan AI assistant dengan intensitas rendah–sedang (median 3–4 prompts), dengan rata-rata hampir sama di semua bidang. Namun, terdapat kelompok kecil heavy users di setiap disiplin yang mendorong nilai maksimum tinggi (hingga 39 prompts). Variasi individu lebih berperan daripada perbedaan disiplin ilmu.
 
 
-#### Analisis Feature Importance
+#### Analisis Fitur
 Model machine learning mengidentifikasi prediktor kunci pola penggunaan AI:
 
 **Fitur Prediktif Teratas:**
@@ -96,17 +101,6 @@ Melalui analisis summarization dari feedback mahasiswa, kami menemukan:
 - "Berguna tapi perlu supervisi manusia"
 - "Titik awal yang baik tapi memerlukan verifikasi"
 
-#### Behavioral Insights
-**Korelasi Gaya Belajar:**
-- **Visual Learners**: Lebih suka AI untuk penjelasan diagram dan ringkasan visual
-- **Auditory Learners**: Menggunakan fitur text-to-speech untuk review konten
-- **Kinesthetic Learners**: Mencari panduan problem-solving langkah-demi-langkah
-
-**Dampak Prestasi Akademik:**
-- **Achiever Tinggi**: Penggunaan AI strategis dan terarah untuk efisiensi
-- **Performa Rata-rata**: Penggunaan lebih luas di berbagai mata pelajaran
-- **Mahasiswa Kesulitan**: Ketergantungan berat untuk pemahaman konsep dasar
-
 #### Implikasi Institusional
 **Untuk Institusi Pendidikan:**
 1. **Kebutuhan Pengembangan Kebijakan**: 78% mahasiswa menginginkan panduan penggunaan AI yang jelas
@@ -135,23 +129,13 @@ Proyek capstone ini memanfaatkan berbagai teknologi AI untuk menciptakan framewo
 - **Kecepatan**: Memproses setiap sampel teks dalam 2-3 detik
 
 #### 2. Model Machine Learning untuk Pengenalan Pola
-**Algoritma ML tradisional** (Random Forest, SVM, XGBoost, Logistic Regression) bekerja bersama AI untuk:
+**Algoritma ML tradisional** (Random Forest, Decision Tree, Logistic Regression, KNN) bekerja bersama AI untuk:
 
 **Tugas Klasifikasi:**
-- Mengkategorikan pola penggunaan secara otomatis (Akademik/Personal/Kreatif)
+- Mengkategorikan pola penggunaan AI secara otomatis 
 - Memprediksi perilaku mahasiswa berdasarkan fitur demografis dan akademik
-- Mengidentifikasi mahasiswa berisiko yang mungkin menjadi terlalu bergantung pada AI
 
-
-#### 3. Pipeline Natural Language Processing
-**NLTK dan TextStat** menyediakan analisis teks dasar:
-
-**Text Preprocessing:**
-- Tokenisasi dan pembersihan respons mahasiswa
-- Analisis sentiment feedback
-- Scoring keterbacaan ringkasan yang dihasilkan AI
-
-#### 4. Intelligent Data Visualization
+#### 3. Data Visualization
 **Plotly with AI-enhanced insights:**
 
 **Generate Chart Otomatis:**
@@ -159,7 +143,7 @@ Proyek capstone ini memanfaatkan berbagai teknologi AI untuk menciptakan framewo
 - Menyarankan jenis chart optimal berdasarkan karakteristik data
 - Menghasilkan judul dan anotasi deskriptif
 
-#### 5. Quality Assurance and Validation
+#### 4. Quality Assurance and Validation
 **Proses validasi yang dibantu AI:**
 
 **Pemeriksaan Kualitas Data:**
@@ -203,10 +187,9 @@ Pendekatan terintegrasi AI ini memastikan bahwa proyek capstone tidak hanya meng
 
 #### 2. Pipeline Klasifikasi Canggih
 - Perbandingan algoritma multiple
-- Cross-validation dengan stratified sampling
+- Cross-validation
 - Optimisasi hyperparameter
 - Analisis feature importance
-- Tools interpretabilitas model
 
 #### 3. State-of-the-Art Summarization
 - Integrasi IBM Granite via Replicate API
@@ -223,10 +206,7 @@ Pendekatan terintegrasi AI ini memastikan bahwa proyek capstone tidak hanya meng
 
 #### 5. Evaluasi Komprehensif
 - Analisis cross-validation
-- Learning curves
-- Validation curves untuk sensitivitas hyperparameter
-- Analisis stabilitas di berbagai random splits
-- Analisis error dan pola misklasifikasi
+- Analisis error dan confusion matrix
 
 ### 🎯 Use Cases
 
