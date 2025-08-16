@@ -1,4 +1,4 @@
-<img width="578" height="309" alt="image" src="https://github.com/user-attachments/assets/9bbab25e-ec28-4568-8c12-d863a482bc87" /># 🎓 Capstone Project: Penggunaan AI Assistant dalam Kehidupan Mahasiswa
+# 🎓 Capstone Project: Penggunaan AI Assistant dalam Kehidupan Mahasiswa
 ## Data Classification and Summarization Analysis
 
 ### 📋 Overview
