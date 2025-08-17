@@ -240,10 +240,6 @@ Pendekatan terintegrasi AI ini memastikan bahwa proyek capstone tidak hanya meng
 - Heatmap confusion matrix
 - Visualisasi distribusi data
 
-#### 5. Evaluasi Komprehensif
-- Analisis cross-validation
-- Analisis error dan confusion matrix
-
 ### 📚 Sumber Tambahan
 
 #### Materi Pembelajaran
