@@ -108,7 +108,6 @@ Model machine learning mengidentifikasi prediktor kunci pola penggunaan AI:
 5. **Total Prompt** (1 ~ 39)
 6. **TaskType** (Writing, Studying, Homework Help, Coding, Brainstorming, Research)
 7. **Final Oucome** (Assignment Completed, Idea Drafted, Confused, Gave Up)
-8. **SessionLengthMin** (Penggunaaan AI dalam hitungan menit)
 
 #### Text Analysis Insights
 Melalui analisis summarization dari feedback mahasiswa, kami menemukan:
@@ -136,11 +135,21 @@ Melalui analisis summarization dari feedback mahasiswa, kami menemukan:
 3. **Integrasi Kurikulum**: Permintaan yang berkembang untuk mata kuliah literasi AI
 4. **Integritas Akademik**: Kebutuhan untuk kode etik dan alat deteksi yang diperbarui
 
-**Untuk Developer Tools AI:**
-1. **Spesialisasi Pendidikan**: Permintaan untuk AI assistant khusus mata pelajaran
-2. **Fitur Kolaborasi**: Mahasiswa menginginkan dukungan proyek kelompok
-3. **Progress Tracking**: Minat pada learning analytics dan metrik peningkatan
-4. **Aksesibilitas**: Kebutuhan untuk interface multibahasa dan ramah disabilitas
+#### Implikasi Penelitian Lanjutan  
+**Untuk Penelitian Lanjutan:**  
+1. **Longitudinal Study**: Diperlukan analisis jangka panjang karena pola penggunaan AI mahasiswa cenderung berubah seiring waktu.  
+2. **Multi-Platform Analysis**: Mahasiswa menggunakan lebih dari satu AI assistant, sehingga perbandingan lintas platform penting untuk memahami efektivitasnya.  
+3. **Learning Outcome**: Ada indikasi hubungan antara intensitas penggunaan AI dan prestasi akademik, namun perlu penelitian mendalam.  
+4. **Psychological Impact**: Potensi dampak jangka panjang pada kognitif mahasiswa, seperti penurunan daya kritis atau peningkatan ketergantungan, perlu dieksplorasi.  
+
+#### Implikasi Mahasiswa  
+**Untuk Mahasiswa:**  
+1. **AI Literacy & Skill Building**: Mahasiswa harus mengembangkan keterampilan literasi AI agar tidak hanya menjadi pengguna pasif.  
+2. **Personalized Learning**: AI dapat mendukung pembelajaran adaptif sesuai disiplin dan jenis tugas, meningkatkan relevansi hasil.  
+3. **Self-Assessment**: Refleksi mandiri atas hasil penggunaan AI diperlukan agar mahasiswa tetap kritis terhadap output.  
+4. **Usage Management**: Pengaturan jumlah dan kualitas *prompt* penting untuk menghindari ketergantungan berlebihan pada AI.  
+5. **Best Practices**: Penerapan etika akademik dan integritas dalam penggunaan AI perlu dibiasakan sejak dini.  
+
 
 ### 🤖 AI Support Explanation
 
@@ -175,7 +184,6 @@ Proyek capstone ini memanfaatkan berbagai teknologi AI untuk menciptakan framewo
 **Proses validasi yang dibantu AI:**
 
 **Pemeriksaan Kualitas Data:**
-- Deteksi otomatis respons anomali
 - Validasi konsistensi di seluruh respons survei
 - Deteksi bias dalam respons teks
 
@@ -235,26 +243,6 @@ Pendekatan terintegrasi AI ini memastikan bahwa proyek capstone tidak hanya meng
 #### 5. Evaluasi Komprehensif
 - Analisis cross-validation
 - Analisis error dan confusion matrix
-
-### 🎯 Use Cases
-
-#### Institusi Pendidikan
-- Memantau adopsi tools AI di kalangan mahasiswa
-- Mengidentifikasi pola dan tren penggunaan
-- Mengembangkan program literasi AI
-- Mengoptimalkan sumber daya pembelajaran
-
-#### Developer Tools AI
-- Memahami perilaku dan preferensi pengguna
-- Meningkatkan fitur produk dan UX
-- Memprioritaskan roadmap pengembangan
-- Meningkatkan strategi engagement pengguna
-
-#### Peneliti
-- Mempelajari pola interaksi manusia-AI
-- Menganalisis dampak AI pada pembelajaran
-- Mengembangkan tools AI pendidikan yang lebih baik
-- Berkontribusi pada diskusi etika AI
 
 ### 📚 Sumber Tambahan
 
