@@ -8,7 +8,7 @@
 
 ### Latar Belakang
 
-Perkembangan teknologi kecerdasan buatan (AI) semakin pesat dalam dunia pendidikan, terutama melalui pemanfaatan *AI Assistant* yang mampu memberikan bantuan instan dalam memahami konsep, menyelesaikan tugas, maupun menghasilkan ide kreatif. Mahasiswa dari berbagai disiplin ilmu kini semakin bergantung pada teknologi ini untuk menunjang proses belajar. Namun, meskipun adopsinya meluas, masih terdapat pertanyaan mendasar mengenai sejauh mana *AI Assistant* benar-benar berkontribusi terhadap peningkatan kualitas tugas, pemahaman konsep, serta kepuasan belajar mahasiswa.
+Perkembangan teknologi kecerdasan buatan (AI) semakin pesat dalam dunia pendidikan, terutama melalui pemanfaatan *AI Assistant* yang mampu memberikan bantuan instan dalam memahami konsep, menyelesaikan tugas, maupun menghasilkan ide kreatif. Mahasiswa dari berbagai disiplin ilmu kini semakin bergantung pada teknologi ini untuk menunjang proses belajar. Namun, meskipun adopsinya meluas, masih terdapat pertanyaan mendasar mengenai sejauh mana *AI Assistant* benar-benar berkontribusi terhadap peningkatan kualitas tugas, pemahaman konsep, serta kepuasan dalam belajar mahasiswa.
 
 ### Permasalahan
 
